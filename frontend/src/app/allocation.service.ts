@@ -1,0 +1,3 @@
+import {Injectable} from '@angular/core';import {HttpClient} from '@angular/common/http';import {Observable} from 'rxjs';
+export interface AllocationRequest{employeeId:number;projectId:number;allocationPct:number;startDate:string;endDate:string;requestedBy:string}
+@Injectable({providedIn:'root'}) export class AllocationService{private readonly base='/api/allocations';constructor(private http:HttpClient){}create(body:AllocationRequest):Observable<unknown>{return this.http.post(this.base,body)}submit(id:number){return this.http.post(`${this.base}/${id}/submit`,{})}approve(id:number,approver:string){return this.http.post(`${this.base}/${id}/approve`,{approver})}}
