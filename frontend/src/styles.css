@@ -1,0 +1,1 @@
+:root{font-family:Arial,sans-serif;background:#f5f6f8;color:#1f2937}.panel{max-width:720px;margin:3rem auto;background:white;padding:2rem;border-radius:8px}form{display:grid;gap:1rem}label{display:grid;gap:.35rem;font-weight:600}input{padding:.65rem;border:1px solid #b7bec8;border-radius:4px}button{padding:.7rem 1rem;width:max-content;cursor:pointer}
